@@ -18,8 +18,8 @@ URL_QUOTES = "https://quotes.toscrape.com/"
 
 def scrape_quotes():
     """
-    Uses Selenium to log in to quotes.toscrape.com, scrape quotes from the main page,
-    and return 3 random quotes as a single formatted string.
+    Uses Selenium to log in to quotes.toscrape.com, scrape quotes from
+    the main page, and return 3 random quotes as a single formatted string.
     """
     logger.info("Starting Selenium driver")
 
