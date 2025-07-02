@@ -48,6 +48,7 @@ async def run(update: Update, context: ContextTypes.DEFAULT_TYPE):
         logger.info(f"User {update.effective_user.id} started scraping")
         await update.message.reply_text("⚙️ Running scraper...")
         quotes = scrape_quotes()
+        await update.message.reply_text("Успішно залогінено. Ось ваші цитати:")
         await update.message.reply_text(quotes)
     except Exception as e:
         logger.error(f"Error in /run handler: {e}")
